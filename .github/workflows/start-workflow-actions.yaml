@@ -24,9 +24,9 @@ jobs:
     runs-on: ubuntu-latest
     needs: test
     steps:
-      - uses: actions/checkout@v1
+      - uses: actions/checkout@master
       - name: Run Snyk to check for vulnerabilities
-        uses: snyk/actions/gradle-jdk11@v1
+        uses: snyk/actions/gradle-jdk11@master
         env:
           SNYK_TOKEN: 9dba30a3-716e-4c67-acc4-9b7aab346d3f
         with:
