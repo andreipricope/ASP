@@ -28,7 +28,7 @@ jobs:
       - name: Run Snyk to check for vulnerabilities
         uses: snyk/actions/gradle-jdk11@main
         env:
-          SNYK_TOKEN: ${{ 9dba30a3-716e-4c67-acc4-9b7aab346d3f }}
+          SNYK_TOKEN: 9dba30a3-716e-4c67-acc4-9b7aab346d3f
         with:
           args: --severity-threshold=high
 
